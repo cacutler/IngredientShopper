@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Access the IngredientsViewController adn set its ingredient store.
         let navController = window!.rootViewController as! UINavigationController
         let ingredientsController = navController.topViewController as! IngredientsViewController
-        ingredientsController.intgredientStore = ingredientStore
+        ingredientsController.ingredientStore = ingredientStore
     }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
