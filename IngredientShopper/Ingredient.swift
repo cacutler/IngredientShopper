@@ -2,7 +2,7 @@
 //  IngredientShopper
 //  Created by Cameron Alexander Cutler on 10/11/23.
 import UIKit
-class Ingredient: Equatable {
+class Ingredient: Equatable, Codable {
     var name: String
     var meal: String
     var store: String
