@@ -14,7 +14,7 @@ class Ingredient: Equatable, Codable {
         self.priceInDollars = priceInDollars
     }
     convenience init() {
-        self.init(name: "", meal: "", store: "", priceInDollars: 0)
+        self.init(name: "Ingredient", meal: "Meal", store: "Store", priceInDollars: 0)
     }
     static func ==(lhs: Ingredient, rhs: Ingredient) -> Bool {
         return lhs.name == rhs.name && lhs.priceInDollars == rhs.priceInDollars && lhs.meal == rhs.meal && lhs.store == rhs.store
