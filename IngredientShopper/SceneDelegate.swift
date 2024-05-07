@@ -11,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         //Create an IngredientStore
         let ingredientStore = IngredientStore()
-        //Access the IngredientsViewController adn set its ingredient store.
+        //Access the IngredientsViewController and set its ingredient store.
         let navController = window!.rootViewController as! UINavigationController
         let ingredientsController = navController.topViewController as! IngredientsViewController
         ingredientsController.ingredientStore = ingredientStore
